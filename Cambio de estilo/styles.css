@@ -83,21 +83,41 @@ body {
     border-color: rgba(255, 255, 255, 1);
 }
 
-.title {
+.title_p {
     font-family: 'Open Sans';
-	font-weight: 300;
-	top: 45%;
-	right: 0;
-	left: 0;
+    font-weight: 300;
+    font-size: 1.8em;
+    margin: 0;
+    background: #fff;
+    text-align: center;
+    font-style: italic;
+    color: black;
 }
 
 section {
-    border: 10px solid;
+    border-top: solid 8px teal;
     padding: 5px;
     border-width: 5px;
-    border-color:slateblue;
+    border-color:teal;
     margin-left: 680px;
     margin-right: 680px;
     margin-top: 300px;
     margin-bottom: 300px;
+    box-shadow: 0em 4px 16px #aaa;
+    width: 500px;
+}
+
+.title{
+    display: block;
+    position: relative;
+    padding: 10px 0 10px 40px;
+    border-top: dashed 1px #fff;
+    border-bottom: dashed 1px #fff;
+    border-left: solid 4px teal;
+    cursor: pointer;
+    counter-increment: pending-items;
+}
+
+.title:hover{
+    background: rgba(#fff, .4);
 }
